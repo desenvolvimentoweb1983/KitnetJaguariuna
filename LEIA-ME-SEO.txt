@@ -1,0 +1,30 @@
+KITNET JAGUARIUNA — ATUALIZACAO SEO
+
+Arquivos incluídos:
+- index.html: título e descrição orientados a buscas de aluguel de kitnet em Jaguariúna, URL canônica, metadados sociais e dados estruturados.
+- style.css: estilos da seção de perguntas frequentes adicionada ao HTML.
+- script.js: galeria configurada para kitnet1.jpg até kitnet10.jpg.
+- sitemap.xml: sitemap da página inicial com referências às dez fotos.
+- robots.txt: permite rastreamento e aponta para o sitemap.
+
+Como aplicar:
+1. Faça backup dos arquivos atuais.
+2. Extraia os arquivos na raiz do projeto /home/webdevluis/kitnetJaguariuna/ e substitua os arquivos com o mesmo nome.
+3. Confira se images/kitnet1.jpg até images/kitnet10.jpg existem.
+4. No terminal do VS Code, execute:
+   git status
+   git add index.html style.css script.js sitemap.xml robots.txt
+   git commit -m "Melhora SEO e adiciona sitemap"
+   git push
+5. Aguarde o deployment automático do Vercel.
+6. Teste no navegador:
+   https://kitnetjaguariuna.vercel.app/sitemap.xml
+   https://kitnetjaguariuna.vercel.app/robots.txt
+
+Google Search Console:
+- A propriedade URL-prefix deve ser exatamente https://kitnetjaguariuna.vercel.app/
+- Se ainda não estiver verificada, escolha o método de verificação HTML file, coloque o arquivo de verificação baixado pelo Google na raiz do projeto (ao lado de index.html), faça commit/push, espere o Vercel publicar e clique em Verificar no Search Console.
+- Em Inspeção de URL, teste https://kitnetjaguariuna.vercel.app/ e clique em Solicitar indexação.
+- Em Sitemaps, envie sitemap.xml.
+
+Observação: enviar o sitemap e solicitar indexação não garante posição específica nem indexação imediata. As mudanças ajudam o Google a descobrir e entender a página; a classificação depende de vários fatores.
